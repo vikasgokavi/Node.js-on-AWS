@@ -19,7 +19,7 @@ Home Page of Ubuntu VMware Workstation
 ``
 Now Click on Terminal Application from the application list.
 
-``
+
 ![image](https://github.com/vikasgokavi/Node.js-on-AWS-/assets/105034318/5b812166-166e-498c-84ef-16b338c736d3)
 ``
 1. In order to do all the task, we need to switch as root user using "sudo su -"
