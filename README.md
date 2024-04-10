@@ -63,7 +63,15 @@ apt npm install
 Initialise and start the project
 npm run start
 
-```
+![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/83e00e14-a2c6-4fc4-bcaa-9388c5e8d9b9)
+
+After this step we can access the server at http//:localhost:3001 and copy this address and paste in the firefox browser which is available on Ubuntu VM as it is the local host.
+
+![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/60761ee4-0e93-468e-8fca-fac77a3d12c7)
+
+
+
+
 
 
 
