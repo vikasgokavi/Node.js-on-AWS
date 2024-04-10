@@ -59,7 +59,7 @@ SECRET_KEY="vishwanath"
 apt npm install
 ![image](https://github.com/vikasgokavi/Node.js-on-AWS-/assets/105034318/105e0750-c13a-4db4-81ec-1ee370055f5c)
 
-```
+
 Initialise and start the project
 npm run start
 
