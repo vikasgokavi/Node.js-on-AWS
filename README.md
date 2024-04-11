@@ -3,7 +3,7 @@
 ### Testing the project locally
 
 
-In order to test this application we are deploying the server on locally installed Ubuntu VM. To lauch Ubuntu VM on local system install VM follow the below link.
+In order to test this application we are deploying on locally installed Ubuntu VM. To lauch Ubuntu VM on local system install VM follow the below link.
 https://www.vmware.com/content/vmware/vmware-published-sites/us/products/workstation-pro/workstation-pro-evaluation.
 
 
