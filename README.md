@@ -73,6 +73,48 @@ apt npm install
 ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/60761ee4-0e93-468e-8fca-fac77a3d12c7)
 
 
+### Now we will deploy a server on AWS and follow the same steps to lauch this application.
+
+1. Here we are launching a instance named Nodejs-app-server, with Amazon machine image "Ubuntu 22.04 LTS" and type of instance is t2-micro which consist of 1 VCPU and 1 GiB of Memory.
+
+![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/5e2ae0a6-e49c-4bca-a47e-8a380f5f6c16)
+
+
+2. Let us select Key Pair, we can use a key pair to securely connect to our instance. Ensure that you have access to the selected key pair before you launch the instance.
+
+   ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/8d295b01-9881-4c7f-98ce-a3719c701229)
+
+3. Under network setting, Firewall > create a new security group and keeping default rules where Allow SSH traffic from helps us connect to our instance, keeping the staorage configuration default which is eligible under free tier 1X8GiB for root volume.    
+
+   ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/0b7a2b2a-340f-4b08-8002-27c31fb75896)
+
+4. On clicking Launch instance our VM will take some time and will be ready to connect.
+
+![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/ddce65ca-6793-4ae4-a8de-2eab2e56f874)
+
+5. Next select the ckeckbox of the instance, go tho action and click on connect.
+
+   ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/3e2b8ad3-2254-46e0-9856-a6c39e30157f)
+
+6. Here there are four option we have in order to connect to the server, let us connect the instance using session manager.
+
+   ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/890e61e7-0492-4209-8ef0-a9ae0c64d468)
+
+7. On clicking connect a seperate window open for session manager. Here we are switching the user as root using command "sudo su -" and checked as there is security patches has be updated using "sudo apt update" command. 
+
+![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/17b5838b-4bf6-4284-9859-28ff6e9d9117)
+
+8. After this let us check whether the Git is installed or not using "sudo apt install git" command.
+
+   ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/ace896e9-c7e2-45e5-ad11-41c68e86b1f0)
+
+9. Further step include cloning the repository from the Github using command "git clone    
+
+
+   
+
+
+
 
 
 
