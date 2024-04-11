@@ -96,19 +96,26 @@ apt npm install
 
    ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/3e2b8ad3-2254-46e0-9856-a6c39e30157f)
 
-6. Here there are four option we have in order to connect to the server, let us connect the instance using session manager.
+6. Here there are four option we have in order to connect to the server, let us connect the instance using SSH Client i.e. Putty.
 
-   ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/890e61e7-0492-4209-8ef0-a9ae0c64d468)
+![Uploading vvvvvvv.png…]()
+<img width="959" alt="image" src="https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/32bf74a6-6402-4aea-a955-fd06d964e430">
 
-7. On clicking connect a seperate window open for session manager. Here we are switching the user as root using command "sudo su -" and checked as there is security patches has be updated using "sudo apt update" command. 
 
-![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/17b5838b-4bf6-4284-9859-28ff6e9d9117)
+  
 
-8. After this let us check whether the Git is installed or not using "sudo apt install git" command.
+    
 
-   ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/ace896e9-c7e2-45e5-ad11-41c68e86b1f0)
 
-9. Further step include cloning the repository from the Github using command "git clone    
+      
+     
+
+
+
+
+  
+
+
 
 
    
