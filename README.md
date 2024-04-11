@@ -96,10 +96,85 @@ apt npm install
 
    ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/3e2b8ad3-2254-46e0-9856-a6c39e30157f)
 
-6. Here there are four option we have in order to connect to the server, let us connect the instance using SSH Client i.e. Putty.
+6. Here there are four option we have in order to connect to the server, let us connect the instance using SSH Client i.e. Putty, here we use a .ppk we downloaded during instance creation.
 
-![Uploading vvvvvvv.png…]()
 <img width="959" alt="image" src="https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/32bf74a6-6402-4aea-a955-fd06d964e430">
+
+7. Now we are on putty agent,here we will first switch as root user using "sudo su -" command. Once switching as root user let us see is there any updates pending using command "sudo apt update". Then we will check either git is installed or not using git --vesrion command. Then we will install node.js using "sudo apt install nodejs" command.
+
+   <img width="960" alt="image" src="https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/3dce18dc-cde1-4f34-830e-eb5d59041ee5">
+
+8. Moving ahead with installation of npm, package manager using "sudp apt install npm" command.
+
+   ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/8877010e-705d-40b1-93b6-58e3f2199356)
+
+  Now we can see the latest version of node.js and npm.
+
+  ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/cba82cb6-7353-45f7-97e6-2ca56de6a0d0)
+
+9. Let us clone the git repository to aws instance using command "git clone https://github.com/verma-kunal/AWS-Session.git"
+
+    ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/11266096-12b3-43df-a693-b668a4ebf338)
+
+10. In this step we will change the directory to AWS-Session. Under this directory we have created a hidden file named ".env" in order to keep environmental variables.
+
+    <img width="536" alt="image" src="https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/afaf9e34-7b53-44c5-b08d-547e3be5b418">
+
+11. Next step is to we will add the environmental variables .env file using vi editor.
+
+    <img width="960" alt="image" src="https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/2f51ae1e-35e8-434c-bef0-8b1cab04eb23">
+
+    ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/874c5670-bb9b-4362-9671-683483e8d0c5)
+
+12. To run the application here we will install npm node modules here for the packages that need to runthe application.
+
+    ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/345aafbc-6209-46a9-8fca-386957163f8f)
+    
+13. Now we will run the command "npm run start"
+
+    ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/a65fca36-dad8-4fb6-9808-2ef9c4877b74)
+
+
+The command npm run start is commonly used in Node.js projects to start the application. Here's why it's used:
+
+Defined in package.json: In most Node.js projects, the package.json file includes scripts that define various tasks. One of these scripts is often named start, and it typically runs the command needed to start the application.
+
+Consistency: Using npm run start ensures consistency across different development environments and for different developers working on the project. Since it's a standard script name, everyone knows that running npm run start will start the application.
+
+Customizable: The start script can be customized to include any necessary startup commands or configurations specific to your project. For example, it might start a server, compile assets, or perform other initialization tasks.
+
+npm Scripts: npm provides a way to run custom scripts defined in package.json using the npm run command. This allows developers to define and execute project-specific commands easily.
+
+14. Now we will go to browser and paste the public IP and port number 54.164.38.62:3000.
+
+    ![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/f1088515-b64f-4e9d-8eb9-aa42b01d8d62)
+
+
+This site can’t be reached 54.164.38.62 refused to connect. The reason being it can't be reached as while launching ec2-instance under security group we have only enabled the SSH connection. To make site reachable we need to expose port number 3000 to the internet.
+
+<img width="959" alt="image" src="https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/1ca47336-3eb5-455d-9e17-fd55d7b3e328">
+
+Now under inbound rules we will add port number 3000 and we will save the rules.
+
+![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/ff27ce26-0b89-4c4e-9862-3bd11aec75ce)
+
+
+![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/a0fe51f4-6b11-4301-9631-3b993b78fc15)
+
+
+Again go to the same browser page and refresh.
+
+
+![image](https://github.com/vikasgokavi/Node.js-on-AWS/assets/105034318/be8d0e77-825f-4385-b1e5-da61cfbb61b7)
+
+
+Now the application is running successfully.
+
+
+
+
+
+
 
 
   
